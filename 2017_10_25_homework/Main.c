@@ -17,13 +17,15 @@ void main()
 	//	문제2 : 1부터 10까지 더하는 프로그램을 do~while 문을 사용하여 작성하세요.
 
 	int nNum = 0;
-	int j;
-	int nTotal = 0;
-
-	for (j = 0; j < 11; j++)
+	int j = 0;
+	
+	do
 	{
 		nNum += j;
-	}
+		j++;
+	} while (j < 11);
+	
+
 	printf("1~10의 합 : %d \n", nNum);
 
 	printf("\n=================================================\n");
